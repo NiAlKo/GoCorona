@@ -9,7 +9,7 @@
 %header-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 1.2;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -17,9 +17,33 @@
 %btn {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 1.067;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 1.25;
+  color: var(--base-black);
+}
+.title--blue span {
+  color: var(--base-blue);
+}
+.title--red span {
+  color: var(--base-red);
+}
+%title-video {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.33;
+}
+%text-video {
+  font-size: 0.5625rem;
+  line-height: 0.6875;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
 }

@@ -113,25 +113,6 @@
   }
 }
 
-.btn {
-  @extend %btn;
-  display: inline-block;
-  padding: 16px 30px;
-  border-radius: 5px;
-  background-color: var(--btn-blue);
-  color: var(--base-red);
-  transition: 0.3s opacity ease-in-out;
-  &:hover {
-    opacity: 0.8;
-  }
-  &:active {
-    opacity: 0.5;
-  }
-}
-.btn--blue {
-  color: var(--dark-white);
-}
-
 .icon-menu {
   display: none;
   @media (max-width: 768.98px) {

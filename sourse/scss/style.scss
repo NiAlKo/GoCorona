@@ -71,9 +71,39 @@ body {
   object-fit: cover;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// buttons
+.btn {
+  @extend %btn;
+  display: inline-block;
+  padding: 16px 30px;
+  border-radius: 5px;
+  background-color: var(--base-red);
+  color: var(--dark-white);
+  transition: 0.3s opacity ease-in-out;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}
+.btn--blue {
+  background-color: var(--btn-blue);
+}
 //**======================-НЕЗАВИСИМЫЕ_БЛОКИ-=================*/
 
 //**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
 @import "./section/header";
-
+@import "./section/health";
 @import "./section/footer";
