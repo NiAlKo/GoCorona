@@ -1,0 +1,123 @@
+/*!=================-EXPERTS-=================!*/
+.experts {
+  background-color: var(--base-light);
+  padding: 104px 0px 33px 0px;
+
+  &__container {
+  }
+
+  &__statistics {
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767.98px) {
+      align-items: stretch;
+      flex-direction: column;
+    }
+  }
+  &__content {
+    flex: 0 1 50%;
+    padding-right: 20px;
+    @media (max-width: 767.98px) {
+      padding-right: 0px;
+      margin-bottom: 20px;
+    }
+  }
+  &__block-text {
+    max-width: 400px;
+  }
+  &__video {
+    flex: 0 1 50%;
+    position: relative;
+    padding-bottom: 30%;
+    & iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+    }
+    @media (max-width: 767.98px) {
+      padding-bottom: 58%;
+    }
+  }
+}
+.statistics-experts {
+  position: relative;
+  max-width: 655px;
+  margin: 0px auto;
+  margin-bottom: 80px;
+  @media (max-width: 767.98px) {
+    max-width: 425px;
+  }
+  &__body {
+    position: relative;
+    z-index: 5;
+    background-color: var(--base-white);
+    box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+    border-radius: 16px;
+  }
+
+  &__item {
+    background-color: var(--base-red);
+    border-radius: 30px;
+    position: absolute;
+  }
+
+  &__item--1 {
+    width: 66px;
+    height: 66px;
+    transform: rotate(-30deg);
+    border-radius: 16px;
+    bottom: -21px;
+    left: -21px;
+  }
+
+  &__item--2 {
+    width: 100px;
+    height: 100px;
+    transform: rotate(105deg);
+    left: 33%;
+    top: -41px;
+  }
+
+  &__item--3 {
+    width: 127px;
+    height: 127px;
+    transform: rotate(-30deg);
+    right: -46px;
+    bottom: -8px;
+  }
+}
+.body-statistics-experts {
+  padding: 28px 79px 28px 81px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    &:not(:last-child) {
+      @media (max-width: 767.98px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__title {
+    @extend %title-experts;
+  }
+  &__value {
+    @extend %value-experts;
+    margin-bottom: 5px;
+  }
+}

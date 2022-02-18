@@ -48,3 +48,18 @@
   letter-spacing: 0.165em;
   text-transform: uppercase;
 }
+%value-experts {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.195;
+  letter-spacing: 0.14em;
+  color: var(--base-red);
+}
+%title-experts {
+  font-weight: 700;
+  font-size: 0.6875rem;
+  line-height: 1.18;
+  letter-spacing: 0.37em;
+  text-transform: uppercase;
+  color: var(--base-black);
+}
