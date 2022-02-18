@@ -101,9 +101,25 @@ body {
 .btn--blue {
   background-color: var(--btn-blue);
 }
+// block text
+.block-text {
+  &__text {
+    margin-bottom: 24px;
+  }
+  &__title {
+    margin-bottom: 12px;
+  }
+
+  &__btn {
+    @media (max-width: 992.98px) {
+      margin-bottom: 20px;
+    }
+  }
+}
 //**======================-НЕЗАВИСИМЫЕ_БЛОКИ-=================*/
 
 //**======================-ПОДКЛЮЧЕНИЕ_СТИЛЕЙ-=================*/
 @import "./section/header";
 @import "./section/health";
+@import "./section/safety";
 @import "./section/footer";

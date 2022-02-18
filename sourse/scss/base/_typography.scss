@@ -30,12 +30,13 @@
   line-height: 1.25;
   color: var(--base-black);
 }
+.title span {
+  color: var(--base-red);
+}
 .title--blue span {
   color: var(--base-blue);
 }
-.title--red span {
-  color: var(--base-red);
-}
+
 %title-video {
   font-weight: 400;
   font-size: 0.8125rem;

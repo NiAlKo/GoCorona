@@ -8,6 +8,9 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    @media (max-width: 992.98px) {
+      padding: 110px 15px 35px 15px;
+    }
   }
   &__container::before {
     content: "";
@@ -52,9 +55,12 @@
     flex: 1 1 228px;
     margin-left: 18px;
     margin-top: 60px;
+    @media (max-width: 992.98px) {
+      margin-left: 0px;
+    }
     @media (max-width: 767.98px) {
       order: 3;
-      margin-left: 0px;
+
       margin-top: 20px;
     }
   }
@@ -71,21 +77,6 @@
       & img {
         margin: 0 auto;
       }
-    }
-  }
-}
-
-.block-text {
-  &__text {
-    margin-bottom: 24px;
-  }
-  &__title {
-    margin-bottom: 12px;
-  }
-
-  &__btn {
-    @media (max-width: 992.98px) {
-      margin-bottom: 20px;
     }
   }
 }
