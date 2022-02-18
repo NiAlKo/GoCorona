@@ -1,0 +1,25 @@
+// /*!=================-TYPOGRAPHY-=================!*/
+%all-text {
+  font-weight: 400;
+  font-size: 0.75em;
+  line-height: 1.4167;
+  letter-spacing: 0.08em;
+}
+
+%header-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.625em;
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+%btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 0.625em;
+  line-height: 1.067;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+}
