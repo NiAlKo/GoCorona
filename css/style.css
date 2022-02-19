@@ -103,6 +103,11 @@ body {
   color: var(--base-black);
 }
 
+.item-healthcare__title {
+  font-size: 1rem;
+  color: var(--base-black);
+}
+
 /*!=================-COLORS-=================!*/
 :root {
   --base-black: #000000;
@@ -880,6 +885,10 @@ body {
           flex: 0 1 50%;
   position: relative;
   padding-bottom: 30%;
+  -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+          box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .experts__video iframe {
@@ -1002,4 +1011,197 @@ body {
   margin-bottom: 5px;
 }
 
+/*!=================-HEALTHCARE-=================!*/
+.healthcare {
+  padding: 80px 0px 75px 0px;
+}
+
+.healthcare__block-text {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.healthcare .healthcare__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 978px;
+  gap: 72px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992.98px) {
+  .healthcare .healthcare__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 42px;
+  }
+}
+
+.healthcare__item {
+  padding: 36px 17px;
+  -webkit-box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+          box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  background-color: var(--base-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.healthcare__column {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+}
+
+@media (max-width: 992.98px) {
+  .healthcare__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+.healthcare__column--1::before, .healthcare__column--1::after, .healthcare__column--2::after, .healthcare__column--3::after {
+  content: "";
+  position: absolute;
+  background-color: var(--base-red);
+  border-radius: 16px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.healthcare__column--1::before, .healthcare__column--3::after {
+  width: 66px;
+  height: 66px;
+}
+
+.healthcare__column--1::before {
+  bottom: -31px;
+  left: -21px;
+}
+
+.healthcare__column--1::after {
+  width: 97px;
+  height: 97px;
+  top: 31px;
+  right: -51px;
+  border-radius: 30px;
+  -webkit-transform: rotate(105deg);
+          transform: rotate(105deg);
+}
+
+.healthcare__column--2::after {
+  width: 127px;
+  height: 127px;
+  bottom: -26px;
+  right: -71px;
+  border-radius: 30px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+@media (max-width: 992.98px) {
+  .healthcare__column--2::after {
+    left: -71px;
+  }
+}
+
+.healthcare__column--3::after {
+  top: -31px;
+  right: -21px;
+}
+
+@media (max-width: 992.98px) {
+  .healthcare {
+    padding: 40px 0px 35px 0px;
+  }
+}
+
+.item-healthcare {
+  position: relative;
+  z-index: 5;
+}
+
+.item-healthcare__icon {
+  margin-bottom: 58px;
+}
+
+@media (max-width: 992.98px) {
+  .item-healthcare__icon {
+    margin-bottom: 38px;
+  }
+}
+
+.item-healthcare__title {
+  margin-bottom: 4px;
+}
+
 /**======================-FOOTER-=================*/
+.footer {
+  padding: 10px 0px 40px 0px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 425.98px) {
+  .footer__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__item {
+  padding: 10px;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 36px;
+}
+
+@media (max-width: 425.98px) {
+  .footer__item:not(:last-child) {
+    margin: 0px;
+  }
+}
+
+.footer__link img {
+  -webkit-transition: 0.3s opacity ease-in-out;
+  transition: 0.3s opacity ease-in-out;
+}
+
+.footer__link:hover img {
+  opacity: 0.7;
+}
+
+.footer__link:active img {
+  opacity: 0.3;
+}
+
+@media (max-width: 992.98px) {
+  .footer {
+    padding: 10px 0px 20px 0px;
+  }
+}
